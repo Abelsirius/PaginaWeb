@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+</head>
+<body>
+    <header>
+    	    <div class="modal">
+    	  <div class="horaSalida">
+    	  	<h3>Registro de salida</h3>
+    	  	<div class="hoursSalida-2"></div>
+			</div>
+    	  </div>
+    </div>
+    <button class="btn" onclick="mostrarModal();">Salida</button>
+    </header>
+	<div class="aca">
+		<form class="form">
+		    <h1> Horario de entrada del trabajador</h1>
+			<h2 class="Text"></h2>
+			<div class="hora-entro">
+				<div class="Dia"></div>
+				<div class="horas"></div>
+				<div class="minutos"></div>
+			</div>
+		</form>
+	</div>
+	<style type="text/css">
+	    *{
+	    	padding: 0;
+	    	margin: 0;
+	    }
+	    body{
+	    	margin: auto;
+	    }
+	    header{
+	    	position: fixed;
+	    	top: 0;
+	    	left: 0;
+	    	z-index: 1000;
+
+	    }
+		.aca{
+            text-align: center;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			width: 100%;
+            height: 800px;
+			background:url("fondo1.jpg");
+			background-size: cover;
+			background-position: center;
+			position: relative;
+
+		}
+		.form{
+	top: 70px;
+	position: relative;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+		}
+	.hora-entro{
+		flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+	height: 300px;
+    text-align: center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+		}
+		.Dia{
+			font-family: sans-serif;
+			font-size: 30px;
+	       position: relative;
+	       z-index: 15;
+           display: inline-block;
+           background: #1115;
+           color: #fff;
+           border-radius: 40px;
+		}
+		.horas{
+			font-family: sans-serif;
+			font-size: 30px;
+		   position: relative;
+	       z-index: 15;
+           display: inline-block;
+           background: #1115;
+           color: #fff;
+           border-radius: 40px;
+
+		}
+		.minutos{
+			font-family: sans-serif;
+						font-size: 30px;
+		   position: relative;
+	       z-index: 15;
+           display: inline-block;
+           background: #1115;
+           color: #fff;
+           border-radius: 40px;
+
+		} 				h1{
+			color: #fff;
+			font-size: 50px;				
+			padding: 10px;
+			font-family: sans-serif;
+		}
+		.Text{
+			position: relative;
+			padding: 20px;
+			font-family: sans-serif;
+			  background: #fff;
+           color: #111;
+           border-radius: 40px;
+		}
+
+		.modal{
+			  opacity: 0;
+			 visibility: hidden;
+              position: fixed;
+              z-index: 800;
+              width: 100vw;
+              height: 100vh;
+              background: #1117;
+              justify-content: center;
+              align-items: center;
+              transition: 0.7s;
+
+		}
+				.modal .horaSalida {
+					border-radius: 20px;
+					background: #fff;
+					 width: 350px;
+					 height: 350px;
+					 display: flex;
+					 justify-content: center;
+					 align-items: center;
+					 flex-direction: column;
+
+				}
+				.horaSalida h3{
+                      font-size: 35px;
+				}
+		.btn{
+            margin: 10px;
+			font-size: 30px;
+			padding: 10px;
+			border-radius: 10px;
+			outline: none;
+			border: none;
+			background: #3be;
+			display: inline-block;
+			cursor: pointer;
+			position: relative;
+			z-index: 10000;
+		}
+		.btn:hover{
+                 background: #5ce;
+				}
+
+@media screen and (max-width: 650px){
+					.horas{
+                   font-size: 15px;
+                }
+                .minutos{
+                	font-size: 15px;
+                }
+                .Dia{
+                    font-size: 15px;
+                }
+                h1{
+                  font-size: 35px;
+                }
+                .Text{
+             font-size: 15px;
+                }
+     }
+
+     @keyframes aparecer{
+     	  0%{
+     	   opacity: 0;
+     	   visibility: hidden;
+
+     	  }
+
+     	  100%{
+     	  	transition-delay: 0.3s;
+     	  	opacity: 1;
+     	  	visibility: visible;
+     	  }
+     }
+	</style>
+	<script type="text/javascript">
+		
+		let hora = window;
+
+
+		hora.addEventListener("DOMContentLoaded",function(){
+
+          let form = document.querySelector(".form");
+          let entrada = new  Date();
+          let dia = entrada.getDay();
+          let hoRas = entrada.getHours();
+          let miNutes = entrada.getMinutes();
+
+         let diaEntrada = document.querySelector(".Dia");
+         let horaEntrada = document.querySelector(".horas");
+         let minEntrada = document.querySelector(".minutos");      
+          switch(dia){
+          	    case 1 :setTimeout(function(){
+          	    	let L = document.createTextNode("Lunes");
+                        diaEntrada.appendChild(L);
+         diaEntrada.style.padding = "30px";
+        diaEntrada.style.margin = "10px";
+                diaEntrada.style.transition="1s";
+    },1200)    
+          	    break;
+          	    case 2 :setTimeout(function(){
+          	    	let M= document.createTextNode("Martes");
+                        diaEntrada.appendChild(M);
+         diaEntrada.style.padding = "30px";
+        diaEntrada.style.margin = "10px";   
+                        diaEntrada.style.transition="1s";
+    },1200) 
+          	    break;
+          	    case 3 : setTimeout(function(){
+          	    	                	let Mi = document.createTextNode("Miercoles");
+                        diaEntrada.appendChild(Mi)
+          diaEntrada.style.padding = "30px";
+        diaEntrada.style.margin = "10px";  
+                        diaEntrada.style.transition="1s";
+    },1200)
+                 
+  
+          	    break;
+          	    case 4 :
+          	         setTimeout(function(){
+          	         	                	let J = document.createTextNode("Jueves");
+                        diaEntrada.appendChild(J)
+          diaEntrada.style.padding = "30px";
+        diaEntrada.style.margin = "10px";   
+                        diaEntrada.style.transition="1s";
+    },1200)                
+          	    break;
+          	    case 5 :
+                   setTimeout(function(){
+                   		let V = document.createTextNode("Viernes");
+                        diaEntrada.appendChild(V)
+          diaEntrada.style.padding = "30px";
+        diaEntrada.style.margin = "10px";     
+                        diaEntrada.style.transition="1s";
+    },1200)              
+     
+          	    break;
+                case 6 :  setTimeout(function(){
+                	let S = document.createTextNode("Sabado");
+                        diaEntrada.appendChild(S)
+          diaEntrada.style.padding = "30px";
+        diaEntrada.style.margin = "10px";   
+                        diaEntrada.style.transition="1s";
+
+                },1200)       	                
+      
+                break;
+               case 0 :setTimeout(function(){
+               	 let D = document.createTextNode("Domingo")
+            diaEntrada.appendChild(D);
+          diaEntrada.style.padding = "30px";
+        diaEntrada.style.margin = "10px";
+                        diaEntrada.style.transition="1s";
+    },1200)
+        break;   
+         }
+
+  
+     setTimeout(function(){
+
+          let hora = entrada.getHours();
+       	         if (12 < hora ) {
+       	         	let tarde = document.createTextNode(`${hora}PM`)
+       	         	horaEntrada.appendChild(tarde)
+                   	horaEntrada.style.padding = "30px";
+          horaEntrada.style.margin = "10px";
+              horaEntrada.style.transition="1s";
+       	         }
+
+       	         else if(hora < 12 ){
+       	         	let mañana = document.createTextNode(`${hora} am`)
+       	          horaEntrada.appendChild(mañana)
+                 horaEntrada.style.padding = "30px";
+          horaEntrada.style.margin = "10px";
+             horaEntrada.style.transition="1s";
+       	         }
+
+
+       	     },1200)
+
+              
+              setTimeout(function(){
+              	       	         let minTin = document.createTextNode(`${entrada.getMinutes()}min`);
+         minEntrada.appendChild(minTin)
+                   	           minEntrada.style.padding = "30px";
+          minEntrada.style.margin = "10px";
+            minEntrada.style.transition="1s";
+      },1200)
+        
+
+         let h2 = document.querySelector(".Text")
+         let newContenido = document.createTextNode("Hora de entrada");
+         h2.appendChild(newContenido);
+     })
+
+
+   
+    function mostrarModal () {
+    	 let salid =confirm("¿Desea abandonar la pagina de registro de Entrada y salida?")
+    	if (salid === true) {
+    		    	let modal = document.querySelector('.modal');
+
+    	modal.style.animation = "aparecer 3s forwards";
+    	modal.style.display = "flex";
+    }else{
+    	alert("esta bien.")
+    }
+    }
+    console.log(mostrarModal)
+
+	 let entrada = new  Date();
+	           let dia = entrada.getDay();
+          let hoRas = entrada.getHours();
+          let miNutes = entrada.getMinutes();
+
+
+    const salirHoras = document.querySelector(".hoursSalida-2");
+   	let nodeHorasTrabajo = document.createTextNode(`Dia de la semana: ${dia} ; Hora: ${hoRas} ; Minutos: ${miNutes}`);
+     	salirHoras.appendChild(nodeHorasTrabajo)
+     	   salirHoras.style.color="#0a1";
+     	     salirHoras.style.margin="10px";
+     	       salirHoras.style.padding="10px";
+     	         salirHoras.style.fontSize="30px";
+     	 let h3 = document.querySelector("h3");
+	</script>
+
+</body>
+</html>
