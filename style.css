@@ -507,6 +507,9 @@ form .snd:hover{
 			height:250px;
 			margin: 0px 0px;
 		}
+		.login form input{
+		width: 250px;
+		}
 
 }
 
