@@ -19,13 +19,14 @@ header{
  align-items: center;
  transition: 1s;
  scroll:none;
+top:0px;
  right:0px;
- top:0px;	
+	
 	
 }
 .sticky{
 	 right:0px;
- bottom:0px;	
+ top:0px;	
   	background: #1118;
  
 }
