@@ -4,28 +4,28 @@
   window.sr = ScrollReveal();
     sr.reveal('.txtInfo' , {
       duration: 3500,
-      origin: 'left',
+      origin: 'bottom',
       distance:'50px'
     });
         sr.reveal('.imgBe' , {
       duration: 3500,
-      origin: 'right',
+      origin: 'top',
       distance:'50px'
     });
     sr.reveal('.loginScroll' , {
       duration: 3500,
-      origin: 'bottom',
+      origin: 'topm',
       distance:'-110px'
     });
     sr.reveal('.imgLogin', {
       duration: 3500,
-      origin: 'left',
+      origin: 'botoom',
       distance:'50px'
     });
 
     sr.reveal('.imgLogin2', {
       duration: 3500,
-      origin: 'right',
+      origin: 'top',
       distance:'50px'
     });
     sr.reveal('.content', {
