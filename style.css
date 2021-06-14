@@ -345,7 +345,7 @@ footer{
         transition: .4s;
         		display: none;
      filter: invert(5);
-    right:0px;
+    right:0;
 }
 	.icon-menu.active{
     margin:0px 10px;
@@ -369,7 +369,7 @@ footer{
    	margin:0px 10px;
    	display: inline-block;
    	position: relative;
-   	right: 0px;
+   	right: 0;
    }
       .icon-menu.active{
    	margin:0px 10px;
