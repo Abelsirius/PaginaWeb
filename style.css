@@ -795,4 +795,7 @@ font-family: 'Staatliches', cursive;
     border-right: 5px solid transparent;
     border-top: 10px solid #8a1d26;
               	}
+		form{
+			width:260px;
+		}
 	}
