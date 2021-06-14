@@ -502,6 +502,10 @@ form .snd:hover{
 
             width: 150px;
      }
+		.imgLogin2 , .imgLogin{
+			width:140px;
+			height:250px;
+		}
 
 }
 
