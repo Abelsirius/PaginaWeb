@@ -2,11 +2,6 @@
 
 // console.log(fecha.years());
   window.sr = ScrollReveal();
-    sr.reveal('header', {
-      duration: 3500,
-      origin: 'bottom',
-      distance:'-100px'
-    });
     sr.reveal('.txtInfo' , {
       duration: 3500,
       origin: 'left',
