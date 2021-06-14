@@ -14,12 +14,12 @@
     });
     sr.reveal('.loginScroll' , {
       duration: 3500,
-      origin: 'topm',
+      origin: 'top',
       distance:'-110px'
     });
     sr.reveal('.imgLogin', {
       duration: 3500,
-      origin: 'botoom',
+      origin: 'bottom',
       distance:'50px'
     });
 
