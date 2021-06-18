@@ -301,6 +301,10 @@ footer{
 
 }
 
+body.noscroll{
+	overflow:hidden;
+}
+
 .menu-toggle ul{
 	top: 70px;
 	position: relative;
