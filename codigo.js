@@ -52,13 +52,17 @@
 const menuToggle = document.querySelector(".icon-menu");
 const menuDos = document.querySelector(".menu-toggle");
 const head =  document.querySelector("header");
+const body = document.querySelector("body");
 let tamañoIdeal= 550;
 menuToggle.onclick = function(){
+	body.classList.toggle("noScroll")
 	menuToggle.classList.toggle("active");
 	mostrarMenu();
 }
 
 function mostrarMenu(){
+	
+	
        menuDos.classList.toggle("active")
 
 }
