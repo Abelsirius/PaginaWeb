@@ -301,7 +301,7 @@ footer{
 
 }
 
-body.noscroll{
+body.noScroll{
 	overflow:hidden;
 }
 
