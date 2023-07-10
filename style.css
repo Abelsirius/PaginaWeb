@@ -68,7 +68,7 @@ transition: 0.7s;
 	display: inline-block;
 	border-radius: 20px;
     padding: 10px;
-    background:linear-gradient(80deg,#1119,#a02);
+    background:llinear-gradient(80deg,#1119,#55edd8);
 	font-family: 'Raleway', sans-serif;
 	opacity: 0.8;
 	text-decoration: none;
@@ -123,8 +123,8 @@ transition: 0.7s;
 }
 .calle:hover{
 	    transform: translateY(-10px);
-        color: #fff;
-		background: #a014;
+        color: ##ffff;
+		background: #26b7a8;
 }
 
 section{
@@ -152,7 +152,7 @@ section{
      		font-family: 'Raleway', sans-serif;
  }
  .txtInfo h2 span{
- 	color:#e02;
+	color: #26b7a8;
  }
 .pInfo{
 		font-family: 'Raleway', sans-serif;
@@ -272,7 +272,7 @@ footer{
 }
 
 	.content .text1:hover{
-        color: #a02;
+        color:#26b7a8;
 	}
 
 .menu-toggle{
@@ -421,14 +421,14 @@ body.noScroll{
 	
 }*/
 .rojo{
-	color: #a02;
+	color: #26b7a8;
 }
 
 .login{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(120deg,#222,#a02);
+	background: linear-gradient(120deg,#222,#5ccdbe);
 	height: 700px;
 	position: relative;
 }
@@ -462,7 +462,7 @@ body.noScroll{
 		transition: 0.3s;
 	}
 	.login form input:focus{
-    	   border: 5px solid #f228;
+    	   border:5px solid #42d4e088;
 
 	}
 form .snd{
@@ -478,7 +478,7 @@ form .snd{
 
 form .snd:hover{
 
-	background: #f228;;
+	background: ##22ffce88;
 }
 .imgLogin{
 	top: 0;
@@ -666,7 +666,7 @@ font-family: 'Staatliches', cursive;
 }
 
 .slider-test{
-		background: linear-gradient(-70deg,#333 , #e12);
+		background:linear-gradient(-70deg,#333 , #52afa2);
 	position: relative;
 	top: 0;
 	left: 0;
